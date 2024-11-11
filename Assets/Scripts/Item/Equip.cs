@@ -22,7 +22,7 @@ public class Equip : MonoBehaviour
     protected Animator animator;
     protected Camera cam;
 
-    protected virtual void Start()
+    protected virtual void Awake()
     {
         animator = GetComponent<Animator>();
         cam = Camera.main;

@@ -2,27 +2,42 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    Rigidbody rigidbody;
-    [SerializeField] float life = 5f;
+    RangedAttack parent;
+    float lifeTime = 5f;
+    float damage = 5f;
+    Rigidbody _rigidbody;
     
     
     void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
-    void Start()
+    void OnEnable()
     {
-        Invoke("Destory", life);
+        _rigidbody.velocity = Vector3.zero;
+
+        if (IsInvoking("Return"))
+            CancelInvoke("Return");
+
+        Invoke("Return", lifeTime);
     }
 
-    public void Fire(Vector3 direction)
+    public void Initialize(RangedAttack rangedAttack, float life, float damage)
     {
-        rigidbody.AddForce(direction * 10f, ForceMode.Impulse);
+        parent = rangedAttack;
+        lifeTime = life;
+        this.damage = damage;
+    }
+    
+    public void Fire(Vector3 position, Vector3 direction)
+    {
+        transform.position = position;
+        _rigidbody.AddForce(direction, ForceMode.Impulse);
     }
 
-    void Destory()
+    public void Return()
     {
-        Destroy(gameObject);
+        parent.pool.Release(this);
     }
 }

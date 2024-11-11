@@ -2265,7 +2265,6 @@ GameObject:
   - component: {fileID: 1787379059}
   - component: {fileID: 1787379060}
   - component: {fileID: 1787379061}
-  - component: {fileID: 1787379062}
   - component: {fileID: 1787379063}
   m_Layer: 0
   m_Name: Player
@@ -2597,20 +2596,6 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 128
---- !u!114 &1787379062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1787379050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57a13dfad39f6c54e8a4ec9108dbf55f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magicBall: {fileID: 1626228508218770655, guid: 7f821847613e4bf4faf6d09a00078ec0, type: 3}
-  manaUsageOfMagicBall: 10
 --- !u!114 &1787379063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4182,6 +4167,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 6794957289420355545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5215365504922171007
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372712533682426646, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259234785916076209, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
+      propertyPath: m_Name
+      value: Item Magic Sword Ranged 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
 --- !u!4 &5298496758028996847
 Transform:
   m_ObjectHideFlags: 0
@@ -4819,6 +4861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Item Magic Sword
       objectReference: {fileID: 0}
+    - target: {fileID: 2380639907588117680, guid: 12a03049912a8f6489d6e88ca57eed8e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6555100900760425197, guid: 12a03049912a8f6489d6e88ca57eed8e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.68
@@ -5213,4 +5259,5 @@ SceneRoots:
   - {fileID: 193145424842051384}
   - {fileID: 6861162302598951971}
   - {fileID: 7654344604595287486}
+  - {fileID: 5215365504922171007}
   - {fileID: 412364642}
