@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa087d07a33cd044e9c02a1ebbdf3dc7, type: 3}
-  m_Name: Item Sword Linear Attack
+  m_Name: Item Sword Circular Attack
   m_EditorClassIdentifier: 
   id: 0
-  title: "\uB9C8\uBC95 \uCE7C - \uC9C1\uC120\uD615"
+  title: "\uB9C8\uBC95 \uCE7C - \uC6D0\uD615"
   description: "\uB9C8\uBC95 \uCE7C\uC785\uB2C8\uB2E4."
   type: 1
   icon: {fileID: 21300000, guid: 4f2f320a217307a48a107491b1d17ebb, type: 3}
   canStack: 0
   maxStackAmount: 12
   consumables: []
-  dropPrefab: {fileID: 2259234785916076209, guid: 453ad3c46d83fcb488a87dae094ead84, type: 3}
-  equipPrefab: {fileID: 7436548864004820093, guid: d082190bf206ccd45b789735e4999fab, type: 3}
+  dropPrefab: {fileID: 2259234785916076209, guid: 1e8691ebde2d4e948983adc37b3a77d9, type: 3}
+  equipPrefab: {fileID: 7436548864004820093, guid: 299b79906b524d640ae7c8b3fb64b95f, type: 3}

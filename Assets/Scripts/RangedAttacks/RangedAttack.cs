@@ -4,14 +4,21 @@ using UnityEngine.Pool;
 
 public class RangedAttack : MonoBehaviour, IShootable
 {
-    // 오브젝트 풀링
-    public ObjectPool<Projectile> pool;
     // 공격 관련 데이터
     public RangedAttackSO data;
+    
+    // 오브젝트 풀링
+    // TODO : 매니저 단으로 올릴 것
+    public ObjectPool<Projectile> pool;
+
+    public Transform equipParent;
+    public Vector3 firePoint => equipParent.position + equipParent.forward * 0.3f;
+
 
     void Awake()
     {
         pool = new ObjectPool<Projectile>(Create, OnTake, OnReturned, OnDestroyed, false, data.initialSize, data.maximumSize);
+        equipParent = CharacterManager.Instance.Player.equip.equipParent;
     }
 
     Projectile Create()

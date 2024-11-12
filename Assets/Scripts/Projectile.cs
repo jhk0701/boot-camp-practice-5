@@ -5,17 +5,17 @@ public class Projectile : MonoBehaviour
     RangedAttack parent;
     float lifeTime = 5f;
     float damage = 5f;
-    Rigidbody _rigidbody;
+    public Rigidbody Rigidbody { get; private set;}
     
     
     void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody>();
+        Rigidbody = GetComponent<Rigidbody>();
     }
 
     void OnEnable()
     {
-        _rigidbody.velocity = Vector3.zero;
+        Rigidbody.velocity = Vector3.zero;
 
         if (IsInvoking("Return"))
             CancelInvoke("Return");
@@ -33,11 +33,17 @@ public class Projectile : MonoBehaviour
     public void Fire(Vector3 position, Vector3 direction)
     {
         transform.position = position;
-        _rigidbody.AddForce(direction, ForceMode.Impulse);
+        Rigidbody.AddForce(direction, ForceMode.Impulse);
     }
 
     public void Return()
     {
+        if(parent == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         parent.pool.Release(this);
     }
 }
