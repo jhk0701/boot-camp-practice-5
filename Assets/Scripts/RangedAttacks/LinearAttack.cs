@@ -7,10 +7,11 @@ public class LinearAttack : RangedAttack
         base.Shoot();
         // Debug.Log("LinearAttack");
 
-        Projectile p = pool.Get();
-        p.Rigidbody.useGravity = false;
+        Projectile projectile = pool.Get();
+        projectile.Initialize(data.lifeOfProjectile, data.damagePerProjectile);
+        projectile.Rigidbody.useGravity = false;
 
-        p.Fire(firePoint, -equipParent.right * data.speed);
+        projectile.Fire(firePoint, -equipParent.right * data.speed);
     }
 
 }

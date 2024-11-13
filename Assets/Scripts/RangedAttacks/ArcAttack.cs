@@ -7,6 +7,8 @@ public class ArcAttack : RangedAttack
         base.Shoot();
 
         Projectile projectile = pool.Get();
+
+        projectile.Initialize(data.lifeOfProjectile, data.damagePerProjectile);
         projectile.Rigidbody.useGravity = true;
 
         projectile.Fire(firePoint, -equipParent.right * data.speed);
