@@ -10,6 +10,5 @@ public class ArcAttack : RangedAttack
         projectile.Rigidbody.useGravity = true;
 
         projectile.Fire(firePoint, -equipParent.right * data.speed);
-        
     }
 }

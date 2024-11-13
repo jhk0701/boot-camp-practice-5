@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4980673017050032512}
   - component: {fileID: 7698770495622112301}
   - component: {fileID: 5609742631709518402}
-  - component: {fileID: -6720065536111543199}
+  - component: {fileID: 8407658607001626367}
   m_Layer: 0
   m_Name: Equip Magic Sword Ranged 3
   m_TagString: Untagged
@@ -73,7 +73,7 @@ MonoBehaviour:
   statusUsages: []
   attackDistance: 5
   damage: 10
---- !u!114 &-6720065536111543199
+--- !u!114 &8407658607001626367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,10 +82,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7436548864004820093}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2151be3594ab06a43ae16702b050d95f, type: 3}
+  m_Script: {fileID: 11500000, guid: 05e58b352b0337f49bef723918d03db3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: b9ad2aec804532b409202a73703992c5, type: 2}
+  data: {fileID: 11400000, guid: 5a965125d3d2d924d892340e6986d011, type: 2}
+  equipParent: {fileID: 0}
 --- !u!1001 &1614472638360069862
 PrefabInstance:
   m_ObjectHideFlags: 0

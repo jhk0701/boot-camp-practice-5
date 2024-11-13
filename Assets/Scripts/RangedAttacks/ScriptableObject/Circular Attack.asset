@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialSize: 10
   maximumSize: 100
-  damagePerProjectile: 5
   shootRate: 0.5
-  speed: 5
+  damagePerProjectile: 5
   lifeOfProjectile: 5
+  speed: 3
   projectile: {fileID: 1626228508218770655, guid: 7f821847613e4bf4faf6d09a00078ec0, type: 3}
