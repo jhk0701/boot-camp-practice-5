@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187fdfae1e9e81c42bea628768fec769, type: 3}
+  m_Name: Skill Splash Blaster
+  m_EditorClassIdentifier: 
+  skillName: Skill
+  icon: {fileID: 21300000, guid: 06e8d836c76eb494db7ab3784ffcb0eb, type: 3}
+  damage: 50
+  coolDown: 10
+  requiredMana: 100
+  skillObject: {fileID: 1220118601904734377, guid: 249bb90a6912903458b7119943d416b8, type: 3}

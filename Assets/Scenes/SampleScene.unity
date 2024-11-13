@@ -2396,6 +2396,7 @@ GameObject:
   - component: {fileID: 1787379060}
   - component: {fileID: 1787379061}
   - component: {fileID: 1787379063}
+  - component: {fileID: 1787379064}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2740,6 +2741,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curEquip: {fileID: 0}
   equipParent: {fileID: 1292956083}
+--- !u!114 &1787379064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787379050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57a13dfad39f6c54e8a4ec9108dbf55f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedSkill: 0
+  skills:
+  - data: {fileID: 11400000, guid: e134f533988db5e44866e53a8fcbabf6, type: 2}
+  - data: {fileID: 11400000, guid: ff1babfd7f05a1b42bb985f9df07b5e6, type: 2}
 --- !u!1 &1872027696
 GameObject:
   m_ObjectHideFlags: 0
