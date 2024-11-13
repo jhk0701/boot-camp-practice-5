@@ -20,8 +20,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if (condition.UseMana(manaUsageOfMagicBall))
         {
-            Projectile p = Instantiate(magicBall, transform.position + Vector3.up + transform.forward * 0.5f, Quaternion.identity);
-            p.Fire(transform.forward);
+            // Projectile p = Instantiate(magicBall, transform.position + Vector3.up + transform.forward * 0.5f, Quaternion.identity);
+            // p.Fire(transform.forward);
         }
     }
 }

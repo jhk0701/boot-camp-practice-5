@@ -39,6 +39,7 @@ public class PlayerInputController : MonoBehaviour
         if(context.started)
             OnMagicEvent?.Invoke();
     }
+    
     public void OnAttack(InputAction.CallbackContext context)
     {
         if(context.started)
