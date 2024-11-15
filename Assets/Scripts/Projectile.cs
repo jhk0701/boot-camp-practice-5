@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    RangedAttack parent;
     float lifeTime = 5f;
     float damage = 5f;
     public Rigidbody Rigidbody { get; private set;}
@@ -23,9 +22,8 @@ public class Projectile : MonoBehaviour
         Invoke("Return", lifeTime);
     }
 
-    public void Initialize(RangedAttack rangedAttack, float life, float damage)
+    public void Initialize(float life, float damage)
     {
-        parent = rangedAttack;
         lifeTime = life;
         this.damage = damage;
     }
@@ -38,12 +36,6 @@ public class Projectile : MonoBehaviour
 
     public void Return()
     {
-        if(parent == null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        parent.pool.Release(this);
+        ObjectPoolManager.Instance.pool.Release(this);
     }
 }

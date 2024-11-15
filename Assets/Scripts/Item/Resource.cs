@@ -17,5 +17,7 @@ public class Resource : MonoBehaviour
         }
 
         capacy--;
+        
     }
+
 }

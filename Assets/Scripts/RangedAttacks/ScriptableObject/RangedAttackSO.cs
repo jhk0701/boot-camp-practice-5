@@ -12,8 +12,4 @@ public class RangedAttackSO : ScriptableObject
     public int damagePerProjectile = 5;
     public float lifeOfProjectile = 5f;
     public float speed = 5f;
-
-    
-    // 투사체 오브젝트
-    public Projectile projectile;
 }

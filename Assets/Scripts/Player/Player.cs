@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
     [HideInInspector] public PlayerInteraction interaction;
     [HideInInspector] public Rigidbody rigidBody;
     [HideInInspector] public Equipment equip;
+    [HideInInspector] public PlayerAttack attack;
 
 
     public Action<ItemData> AddItem;
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour
         condition = GetComponent<PlayerCondition>();
         interaction = GetComponent<PlayerInteraction>();
         equip = GetComponent<Equipment>();
+        attack = GetComponent<PlayerAttack>();
 
         rigidBody = GetComponent<Rigidbody>();
     }
