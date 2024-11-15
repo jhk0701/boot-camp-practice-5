@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 187fdfae1e9e81c42bea628768fec769, type: 3}
-  m_Name: Skill Splash Blaster
+  m_Name: Skill Sheild
   m_EditorClassIdentifier: 
-  skillName: Skill
-  icon: {fileID: 21300000, guid: 06e8d836c76eb494db7ab3784ffcb0eb, type: 3}
+  skillName: Sheild
+  icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   damage: 50
+  speed: 5
+  duration: 1
   coolDown: 10
   requiredMana: 100
   skillObject: {fileID: 1220118601904734377, guid: 249bb90a6912903458b7119943d416b8, type: 3}

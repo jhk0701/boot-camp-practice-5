@@ -12,6 +12,7 @@ public class PlayerInputController : MonoBehaviour
     public event Action OnInteractEvent;
     public event Action OnToggleInventoryEvent;
     public event Action OnToggleSettingEvent;
+    public event Action OnSwitchSkillEvent;
 
     public void OnMove(InputAction.CallbackContext context)
     {
@@ -67,6 +68,13 @@ public class PlayerInputController : MonoBehaviour
         if(context.started)
         {
             OnToggleInventoryEvent?.Invoke();
+        }
+    }
+    public void OnSwitchSkill(InputAction.CallbackContext context)
+    {
+        if(context.started)
+        {
+            OnSwitchSkillEvent?.Invoke();
         }
     }
 }

@@ -9,6 +9,8 @@ public class SkillSO : ScriptableObject
     public Sprite icon;
 
     public float damage = 50f;
+    public float speed = 1f;
+    public float duration = 1f;
     public float coolDown = 10f;
     public float requiredMana = 100f;
 
