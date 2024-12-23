@@ -2,7 +2,7 @@
 
 ## 작업
 Q1 확장 문제 : 
-- 직선으로 진행하는 공격
+- [직선](./Assets/Scripts/RangedAttacks/LinearAttack.cs)으로 진행하는 공격
 - 포물선으로 움직이는 공격
 - 원형으로 퍼지는 공격
 
